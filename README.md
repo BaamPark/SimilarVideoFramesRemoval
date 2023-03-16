@@ -5,6 +5,7 @@ This Python script removes similar images in video frames. The script works by c
 ## Usage
 ```sh
 python remove_similar_images.py
+```
 
 ## Configuration
 The script can be customized by modifying the following parameters:
