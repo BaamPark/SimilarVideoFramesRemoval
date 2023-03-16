@@ -6,6 +6,8 @@ from PIL import Image
 #remove_frame has three arguements, path, threshold, and queue_size
 #The frames to be deleted will be determined by threshold value
 #The queue_size is the size of window that will be slided through iteration
+#In each iteration, the first frame in the window will be compared to the subsequent frames of the window
+#The comparison is subtraction using image hash
 
 def main():
     path = ''
