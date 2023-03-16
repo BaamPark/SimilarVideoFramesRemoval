@@ -3,10 +3,21 @@ import imagehash
 from PIL import Image
 import numpy as np
 
+#stat_frame is function to investigate difference  between two images within window
+
 def main():
-    path = '/home/beomseok/ppe_data/PPE_all/sim3/Frames'
+    path = ''
     matrix_profile = stat_frame(path, queue_size=3)
     print(matrix_profile)
+    print((matrix_profile.ravel()).mean(0))
+    print(np.var((matrix_profile.ravel())))
+    max_val = int(np.max(matrix_profile))
+    print(max_val)
+    plt.hist(matrix_profile.ravel(), bins=max_val, range=[0, max_val])
+    plt.title("Frequency Histogram")
+    plt.xlabel("Value")
+    plt.ylabel("Frequency")
+    plt.show()
 
 def sort_key(filename):
     parts = filename.split("_")
