@@ -27,4 +27,4 @@ The script can be customized by modifying the following parameters:
 5. Once all the images in the queue are compared, the marked images are deleted, and the queue is updated with new images for the next iteration.
 
 ## Note
-To prevent the actual deletion of images during testing, comment out the following line in the 'remove_frame()' function:
+To prevent the actual deletion of images during testing, comment out the following line in the `remove_frame()` function:
