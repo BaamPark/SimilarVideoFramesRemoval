@@ -1,6 +1,6 @@
 # Similar Image Removal in Video Frames
 
-This Python script removes similar images in video frames. The script works by comparing image hashes and deleting the images that fall below a specified threshold.
+This Python script removes similar images in video frames. The script works by comparing image hashes and deleting the images that fall below a specified threshold.This project aims to address similarity issue that may cause overfitting of the image classification deep learning model.
 
 ## Usage
 ```sh
